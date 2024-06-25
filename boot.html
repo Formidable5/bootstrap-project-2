@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+    .pick {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .pick div a {
+      text-decoration: none;
+  }
+
+  /* Media queries */
+  @media (max-width: 600px) {
+      .pick {
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .pick div {
+          text-align: center;
+      }
+
+      .container .row {
+          flex-direction: column;
+          text-align: center;
+      }
+
+      .container .row .col {
+          margin-bottom: 20px;
+      }
+  }
+
+  @media (min-width: 601px) and (max-width: 900px) {
+      .pick {
+          justify-content: space-around;
+      }
+
+      .container .row .col {
+          margin-bottom: 20px;
+      }
+  }
+
+  @media (min-width: 901px) {
+      .pick {
+          justify-content: space-between;
+      }
+  }
+
+  /* Hero section */
+  #home {
+      padding: 20px;
+      text-align: center;
+  }
+
+  /* Product cards */
+  .card {
+      margin: 10px;
+  }
+
+  @media (max-width: 600px) {
+      .d-flex {
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .d-flex img {
+          margin-bottom: 10px;
+      }
+  }
+
+  @media (min-width: 601px) and (max-width: 900px) {
+      .d-flex {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+
+      .d-flex img {
+          margin: 10px;
+      }
+  }
+</style>
+</head>
+<body>
+<header style="background-color: lightblue;">
+    <!-- navbar section -->
+    <nav  >
+      <div class="pick d-flex bd-highlight">
+        <div  class="p-2 flex-grow-1 bd-highlight" ><img src="img/Screenshot_2024-02-03_070907-removebg-preview.png"width="60px" alt="logo" ></div>
+        <div  class="p-4 bd-highlight"><a href="#home">Home</a>  </div> 
+        <div class="p-4 bd-highlight"><a href="#product">Product</a></div>
+        <div  class="p-4 bd-highlight"><a href="#about">About</a></div>
+         <div  class="p-4 bd-highlight"><a href="#contact">Contact</a> </div> 
+     </div>
+    </nav>
+  
+</header>
+<!-- hero section -->
+ <section id="#home" style="background-color: black; padding:center;">
+<div class="container" style="gap: 8px;">
+    <div class="row" style="gap: 8px;">
+      <div class="col " >
+       <h1 style="color: white;">Welcome to Timeless Treasures </h1> <br><p style="color: white;">Where Every Second Counts! Discover the perfect blend of elegance and precision with our exquisite watch collection.</p>
+      </div>
+      <div class="col mr" >
+        <img src="img/004b0376643253335673ceeaa9f9099d-removebg-preview.png"  alt="watch">
+      </div>
+    </div>
+</section>
+
+
+<section style="margin: auto;">
+    <div class="d-flex justify-content-between" gap="4px">
+        <img src="img/facebook.png"width="200px" alt="facbook" >
+        <img src="img/amazon-2 (1) 1.png"width="200px" alt="amazon">
+        <img src="img/airbnb 1.png"width="200px"  alt="airbnb">
+        <img src="img/google-2015 1.png"width="200px"  alt="goggle">
+        <img src="img/grab-logo.png"width="200px"  alt="grab">
+     </div>
+     <div></div>
+</section>
+<!-- product section -->
+ <section class=" d-flex gap-4" id="product">
+    <div class="card" style="width: 18rem;">
+        <img src="img/eeae2004435de0b77c4b5a1bf9afc36a.jpg" class="card-img-top" alt="watch">
+        <div class="card-body">
+          <h5 class="card-title">Skagen Signatur</h5>
+          <p class="card-text">The Skagen Signatur is a minimalist and elegantly designed wristwatch that embodies the clean and sleek aesthetic typical of Scandinavian design. Here are some key features and descriptions of the Skagen Signatur.</p>
+          <a href="#" class="btn btn-primary">View Detail</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/ff9398397d741c3beb4560c87fb718e1.jpg" class="card-img-top" alt="watch">
+        <div class="card-body">
+          <h5 class="card-title">Bulova Classic</h5>
+          <p class="card-text">The Bulova Classic is a collection of wristwatches known for their timeless design, high-quality craftsmanship, and reliable performance. Here’s an in-depth look at the Bulova Classic:</p>
+          <a href="#" class="btn btn-primary">View Detail</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/download.webp" class="card-img-top" alt="watch">
+        <div class="card-body">
+          <h5 class="card-title">Apple Watch Series 8</h5>
+          <p class="card-text">The Apple Watch Series 8 is the latest iteration of Apple’s smartwatch, designed to enhance health, fitness, and connectivity with cutting-edge technology and refined aesthetics. Here’s a detailed look at the Apple Watch Series 8:t</p>
+          <a href="#" class="btn btn-primary">View Detail</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/5354e65a5987fe9c8598a7210c783371.jpg" class="card-img-top" width="300px" alt="watch">
+        <div class="card-body">
+          <h5 class="card-title">Omega Speedmaster</h5>
+          <p class="card-text">The Omega Speedmaster is one of the most iconic and revered watches in the history of horology, often associated with space exploration and its nickname "Moonwatch." It is celebrated for its robust design, precise chronograph functions, and historical significance. Here’s an in-depth look at the Omega Speedmaster:</p>
+          <a href="#" class="btn btn-primary">View Detail</a>
+        </div>
+      </div>   
+ </section>
+
+</body>
+</html>
+
